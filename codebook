@@ -1,0 +1,37 @@
+#Codebook
+The Data Cleaning Project
+All necessary data is in a directory UCIHARDataset on the working directory (also runanalysis.R is stored in this directory and programmed to run there)
+•	test/x_test.txt – test dataset
+•	train/x_train.txt – training dataset
+•	test/y_test.txt – labels for test dataset
+•	train/y_train.txt – labels for training dataset
+•	activity_labels.txt – descriptive names of activities
+•	test/subject_test.txt – subjects who performed activity in test dataset
+•	train/subject_train.txt – subjects who performed activity in train dataset
+•	features.txt – List of all features
+
+#Information about Variables
+Variables used in within the script
+•	testdatafile and traindatafile – used to store names of each file to be read in
+•	testSubject - data frame with data from subject_test.txt
+•	trainSubject - data frame with data from subject_train.txt
+•	dtSubject – binded Subject data
+•	testY – data frame with data from Y_test.txt
+•	trainY – data fram with data from Y_train.txt
+•	dtY – binded Y data
+•	testX – data frame with data from X_test.txt
+•	trainX – data frame with data from X_train.txt
+•	dtX – binded X data
+•	dtActivityNames data frame with numeric and descriptive activity
+•	dtFeatures –labels for features variable
+•	dtAll – binded all test & train data
+•	dtSub – subset of dtAll only with variables & data with measurements (mean & std)
+•	dtAnswer – data summarized with means
+
+#Steps in script
+1.	Loading data into variable
+2.	Cleaning data
+3.	Merge datasets and creating one big dataset
+4.	Extract datasets with mean & std variable name
+5.	Change activities to descriptive name
+6.	Perform summary with means
